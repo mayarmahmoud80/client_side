@@ -1,0 +1,17 @@
+<div class="m-5 ">
+    <div class="card m-2" style="width: 100%;">
+        
+      <div class="card-body bg-light ">
+          <h1 class="card-title " > {{todo.title}}</h1>
+       
+          <div class="d-flex justify-content-between ">
+          <p class="card-text " style="width: 35%;">{{todo.content.slice(0,100)}}</p>
+          <div class="" *ngIf="showActions">
+            <button  (click)="navigateTodos(todo._id)" class="btn btn-primary ">Details</button>
+            <button (click)="navigateUpdateTodoForm(todo._id)" class="btn btn-primary  mx-2">Edit</button>
+            <button  (click)="delete(todo._id)" class="btn btn-danger mx-2">Delete</button>   </div> 
+        </div>
+       </div>
+
+      </div>
+</div>
