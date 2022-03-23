@@ -1,0 +1,21 @@
+<div class="">
+  <div class=" d-flex justify-content-center my-5 " >
+    <div class="card bg-light py-2 " style="width: 35%;">
+
+  <div class=" p-3 ">
+      <label for="title" class="form-label">Todo Title</label>
+      <input type="text" class="form-control" id="title" placeholder="new todo title" [(ngModel)]="todo.title">
+    </div>
+  
+    <div class=" px-3">
+      <label for="content" class="form-label">Todo content</label>
+      <textarea type="text" class="form-control" id="content" placeholder="new todo content"
+        [(ngModel)]="todo.content"></textarea>
+    </div>
+  
+    <div class=" px-3 my-5 d-flex justify-content-center">
+    <button  (click)=" Model ? update(): create() " class=" btn btn-primary ">{{Model ? 'update' : "create"}}</button>
+  </div>
+  
+  </div></div>
+</div>
